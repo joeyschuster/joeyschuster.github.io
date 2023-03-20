@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joey Schuster - CV</title>
   <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
 <body class="bg-neutral-900 font-sans">
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-4 py-8 snap-y">
 
     <section class="px-6 sm:px-8 lg:flex lg:w-full lg:justify-between lg:gap-12">
 
@@ -39,72 +40,75 @@
       </div>
 
       <!-- Main right column -->
-      <div class="flex items-center lg:rounded-l-2xl lg:w-1/2 relative text-neutral-100 my-32">
-        <div>
-          <h2 class="text-3xl font-bold mb-2 text-yellow-300">About Me</h2>
+      <div class="flex items-center lg:rounded-l-2xl lg:w-1/2 relative text-neutral-100 my-24">
+        <div class="text-sm">
+          <h2 class="text-3xl font-bold mb-2 text-white">About Me</h2>
           <p class="mb-8">I'm a Full Stack Developer and Engineering Padawan with a passion for creating beautiful,
             functional, and efficient applications across the entire development stack.</p>
 
-          <h2 class="text-xl font-bold mb-2 text-yellow-200">My developer journey</h2>
-
-          <p class="mb-4"> My professional journey started in Theme Support at Shopify, where I helped merchants
-            customize their
-            stores using HTML, CSS, Liquid, and JavaScript.
-          </p>
-          <p class="mb-4">With almost 4 years of professional experience, I've been involved in various web and software
-            development projects, including my most significant accomplishment, a rebuilt <a
-              class="text-orange-500 hover:bg-orange-500 hover:text-orange-100"
-              href="https://chrome.google.com/webstore/detail/diffy/ecojpmajjogkgoehdachjomfbmjkdedc"><strong>Diffy</strong>
-              chrome extension app</a> (currently 700+ users), which
-            taught me valuable skills in handling complex front-end challenges and working collaboratively with
-            cross-functional teams.
-          </p>
-
-          <h2 class="text-xl font-bold mb-2 text-yellow-100">Coding experience</h2>
-
-          <p class="mb-4">I am proficient in a wide range of programming languages, including JavaScript, Python,
-            Pinescript, HTML, CSS, and Liquid. I am also familiar and somewhat competent with languages like, Ruby, C#
-            and C++. I enjoy the creative and problem-solving aspects of software development, allowing me to express
-            myself and contribute to a shared vision with colleagues and clients.
-          </p>
-
-          <h2 class="text-xl font-bold mb-2 text-yellow-200">Staying up-to-date</h2>
-
-          <p class="mb-4">To stay up-to-date with the latest trends and best practices, I regularly engage with various
-            online communities, news outlets, and resources like Hacker News, Reddit, and YouTube. I also enjoy learning
-            from real-world examples found in clients' websites and public code. My passion lies in helping those in
-            need, making me particularly interested in working on projects and industries aligned with this purpose.
-          </p>
-          <p class="mb-4 hidden md:block">
-            You can learn more about my <a class="font-bold text-cyan-300" href="#experience">experience</a>, <a
-              class="font-bold text-orange-300" href="#projects">projects</a> and <a class="font-bold text-green-300"
-              href="#skills">skills</a> here.
-          </p>
-
-          <div id="contact">
-            <h3 class="text-xl font-semibold mb-2">Contact</h3>
-            <p>
-              Email: <a href="mailto:joey.schuster@shopify.com"
-                class="mx-2 text-pink-500">joey.schuster@shopify.com</a><br>
-              LinkedIn: <a href="https://www.linkedin.com/in/jschusterhill" class="mx-2 text-pink-400"
-                target="_blank">jschusterhill</a><br>
-              GitHub: <a href="https://github.com/joeyschuster" target="_blank"
-                class="mx-2 text-pink-300">joeyschuster</a>
+          <p class="font-bold text-orange-200 mb-2">let developerJourney = `</p>
+          <div class="pl-4 mb-2">
+            <p class="mb-4">My developer journey began at Shopify as Senior Specialist in Theme Support. In this role,
+              I worked directly with merchants to help them customize their online stores, troubleshoot technical
+              issues,
+              and provide advice on best practices for success.</p>
+            <p class="mb-4">With almost 4 years of professional experience, I've been involved in various web and
+              software
+              development projects, including my most significant accomplishment, a rebuilt <a
+                class="text-orange-300 hover:text-orange-600 transition ease-out hover:ease-in"
+                href="https://chrome.google.com/webstore/detail/diffy/ecojpmajjogkgoehdachjomfbmjkdedc"><strong>Diffy</strong>
+                chrome extension app</a> (currently 700+ users), which
+              taught me valuable skills in handling complex front-end challenges and working collaboratively with
+              cross-functional teams.
+            <p class="text-orange-200">`;</p>
             </p>
           </div>
 
+          <p class="font-bold text-yellow-200 mb-2">let codingExperience = `</p>
+          <div class="pl-4 mb-2">
+            <p class="mb-4">I am proficient in a wide range of programming languages, including JavaScript, Python,
+              Pinescript, HTML, CSS, and Liquid. I am also familiar and somewhat competent with languages like, Ruby, C#
+              and C++. I enjoy the creative and problem-solving aspects of software development, allowing me to express
+              myself and contribute to a shared vision with colleagues and clients.
+            </p>
+            <p class="text-yellow-200">`;</p>
+          </div>
+
+          <p class="font-bold text-green-200 mb-2">let stayingUpToDate = `</p>
+          <div class="pl-4 mb-2">
+            <p class="mb-4">To stay up-to-date with the latest trends and best practices, I regularly engage with
+              various
+              online communities, news outlets, and resources like Hacker News, Reddit, and YouTube. I also enjoy
+              learning
+              from real-world examples found in clients' websites and public code. My passion lies in helping those in
+              need, making me particularly interested in working on projects and industries aligned with this purpose.
+            </p>
+            <p class="text-green-200">`;</p>
+          </div>
+
+          <p class="mb-4 hidden md:block">
+            You can learn more about my <a
+              class="font-bold text-cyan-300 hover:text-cyan-600 transition ease-out hover:ease-in"
+              href="#experience">experience</a>, <a
+              class="font-bold text-indigo-300 hover:text-indigo-600 transition ease-out hover:ease-in"
+              href="#projects">projects</a> and <a
+              class="font-bold text-violet-300 hover:text-violet-600 transition ease-out hover:ease-in"
+              href="#skills">skills</a> here.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Funny gif -->
-    <img class="my-48" src="joey.gif" />
+    <div class="my-16 w-full h-screen flex items-center justify-center">
+      <img class="p-4 border-2" src="joey.gif" />
+    </div>
 
     <section id="experience" class="px-6 my-48 sm:px-8 lg:flex lg:w-full lg:justify-between lg:gap-12">
 
       <!-- Experience left column -->
-      <div class="lg:mb-10 lg:w-1/2 text-neutral-100">
-        <div class="sticky top-48">
+      <div class="lg:mb-10 lg:w-1/2 text-neutral-100 text-sm">
+        <div class="sticky lg:top-36">
           <h3 class="text-3xl font-mono xl:text-7xl font-extrabold mb-8 p-4 border-l-8 border-cyan-400">Experience</h3>
           <div class="lg:mx-auto lg:max-w-2xl flex items-center">
             <div>
@@ -116,26 +120,26 @@
                   <p>Shopify, Remote</p>
                   <p class="py-4 text-xs text-yellow-500">Oct 2019 - Current (3 years, 6 months)</p>
                   <ul class="list-disc pl-5">
-                    <li>Assisted customers with website customization and theme configuration, resulting in a 95%
-                      satisfaction rate.</li>
-                    <li>Collaborated with a team of developers and designers to improve theme features and resolve bugs,
-                      enhancing overall product quality.</li>
-                    <li>Trained and mentored new support team members, ensuring they were well-equipped to provide
-                      exceptional customer service.</li>
-                    <li>Identified and documented recurring customer issues, providing valuable feedback for future
-                      theme updates and enhancements.</li>
-                    <li>Managed a high volume of support tickets, consistently meeting or exceeding response time and
-                      resolution targets.</li>
-                    <li>Developed and maintained comprehensive documentation and knowledge base articles, reducing
-                      support ticket volume by 15%.</li>
-                    <li>Established and maintained strong relationships with clients, leading to increased customer
-                      loyalty and repeat business.</li>
-                    <li>Utilized excellent problem-solving skills to troubleshoot and resolve complex issues, minimizing
-                      downtime for clients.</li>
-                    <li>Acted as a liaison between clients and the development team, effectively communicating client
-                      needs and ensuring timely resolutions.</li>
-                    <li>Continuously updated personal technical knowledge and skills, staying current with industry
-                      trends and best practices to better serve clients.</li>
+                    <li class="mb-4"><strong>Customer Assistance: </strong>Assisted customers with website customization
+                      and theme configuration, ensuring high satisfaction rates.</li>
+                    <li class="mb-4"><strong>Team Collaboration: </strong>Collaborated with a team of developers and
+                      designers to improve theme features and resolve bugs.</li>
+                    <li class="mb-4"><strong>Mentorship: </strong>Trained and mentored new support team members to
+                      provide exceptional customer service.</li>
+                    <li class="mb-4"><strong>Issue Identification: </strong>Identified and documented recurring customer
+                      issues, offering valuable feedback for future theme updates.</li>
+                    <li class="mb-4"><strong>Support Ticket Management: </strong>Managed a high volume of support
+                      tickets, consistently meeting response time and resolution targets.</li>
+                    <li class="mb-4"><strong>Documentation: </strong>Developed and maintained comprehensive
+                      documentation and knowledge base articles, reducing support ticket volume.</li>
+                    <li class="mb-4"><strong>Client Relationship Management: </strong>Established and maintained strong
+                      relationships with clients, leading to increased customer loyalty.</li>
+                    <li class="mb-4"><strong>Problem Solving: </strong>Utilized excellent problem-solving skills to
+                      troubleshoot and resolve complex issues, minimizing downtime for clients.</li>
+                    <li class="mb-4"><strong>Communication: </strong>Acted as a liaison between clients and the
+                      development team, effectively communicating client needs.</li>
+                    <li class="mb-4"><strong>Technical Skills: </strong>Continuously updated personal technical
+                      knowledge and skills, staying current with industry trends and best practices.</li>
                   </ul>
                 </div>
               </div>
@@ -145,17 +149,29 @@
       </div>
 
       <!-- Experience right column -->
-      <div class="text-neutral-100 lg:w-1/2">
+      <div class="text-neutral-100 lg:w-1/2 lg:mt-96 text-sm">
         <h2 class="text-xl font-bold py-4 p-4 border-l-8 border-sky-400 bg-sky-400">Previous Roles</h2>
         <div class="flex flex-wrap mb-8 border-l-8 border-sky-400">
           <div class="bg-sky-800/10 flex-auto p-4 w-full">
-            <h4 class="text-lg font-semibold">Guru</h4>
+            <h4 class="text-lg font-semibold">Guru / Support Advisor</h4>
             <p>Shopify, Remote</p>
             <p class="py-4 text-xs text-green-500">Apr 2019 - Oct 2019 (6 months)</p>
             <ul class="list-disc pl-5">
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
+              <li class="mb-4"><strong>Efficient Communication:</strong> Responded to merchant inquiries via phone,
+                email, and chat, ensuring quick response times and same-day ticket review.</li>
+              <li class="mb-4"><strong>Business Coaching:</strong> Offered holistic solutions to merchants, considering
+                their overall business needs and growth opportunities.</li>
+              <li class="mb-4"><strong>Documentation:</strong> Completed essential follow-up documentation after each
+                interaction with merchants.</li>
+              <li class="mb-4"><strong>Personalized Support:</strong> Engaged in human conversations with merchants,
+                addressing their issues and providing tailored coaching for their businesses.</li>
+              <li class="mb-4"><strong>Solution-Oriented Approach:</strong> Focused on providing needs-based solutions
+                instead of pushing sales.</li>
+              <li class="mb-4"><strong>Merchant Advocacy:</strong> Communicated with stakeholders to advocate for
+                merchants and the Shopify platform.</li>
+              <li class="mb-4"><strong>Professional Development:</strong> Actively sought personal growth opportunities
+                through reflection, reviewing past interactions, and participating in regular 1:1 meetings with team
+                leads.</li>
             </ul>
           </div>
           <div class="bg-sky-700/10 flex-auto p-4 w-full">
@@ -163,9 +179,18 @@
             <p>ANZ, Wellington</p>
             <p class="py-4 text-xs text-green-500">Jan 2018 - Nov 2018 (11 months)</p>
             <ul class="list-disc pl-5">
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
+              <li class="mb-4"><strong>Customer Support:</strong> Assisted new and existing customers with general
+                inquiries and educated them on products and digital/self-service channels.</li>
+              <li class="mb-4"><strong>Adaptability:</strong> Demonstrated ability to adapt to a fast-paced,
+                ever-changing environment while managing high call volumes across multiple systems and channels.</li>
+              <li class="mb-4"><strong>Customer Service Experience:</strong> Leveraged previous customer service
+                experience from retail, hospitality, or contact center environments to provide exceptional support.</li>
+              <li class="mb-4"><strong>Communication:</strong> Connected effectively with a diverse range of people
+                through clear communication and a growth mindset.</li>
+              <li class="mb-4"><strong>Time Management:</strong> Exhibited excellent time management, proficiency in
+                using multiple systems and technology, and strong attention to detail.</li>
+              <li class="mb-4"><strong>Resilience:</strong> Showcased resilience and confidence in handling challenging
+                conversations with customers while aligning with ANZ ICARE Values.</li>
             </ul>
           </div>
           <div class="bg-sky-600/10 flex-auto p-4 w-full">
@@ -173,66 +198,85 @@
             <p>ANZ, Wellington</p>
             <p class="py-4 text-xs text-green-500">May 2016 - Jan 2018 (1 year, 9 months)</p>
             <ul class="list-disc pl-5">
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
+              <li class="mb-4"><strong>Fraud Detection:</strong> Focused on identifying fraud across all banking
+                channels to protect customer assets and maintain security.</li>
+              <li class="mb-4"><strong>Customer Support:</strong> Assisted customers impacted by fraudulent activity by
+                providing guidance, solutions, and reassurance during challenging situations.</li>
+              <li class="mb-4"><strong>Security Measures:</strong> Collaborated with internal teams to enhance security
+                measures and prevent future fraudulent activities.</li>
+              <li class="mb-4"><strong>Investigation:</strong> Conducted thorough investigations to identify patterns,
+                trends, and potential weaknesses in banking channels related to fraud.</li>
             </ul>
           </div>
           <div class="bg-sky-500/10 flex-auto p-4 w-full">
             <h4 class="text-lg font-semibold">Service Consultant</h4>
             <p>ANZ, Wellington</p>
             <p class="py-4 text-xs text-green-500">Feb 2015 - Apr 2016 (1 year, 3 months)r</p>
-            <ul class="list-disc pl-5">
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-            </ul>
           </div>
           <div class="bg-sky-400/10 flex-auto p-4 w-full">
             <h4 class="text-lg font-semibold">Collections Officer</h4>
             <p>ANZ, Wellington</p>
             <p class="py-4 text-xs text-green-500">2013 (6 months)</p>
-            <ul class="list-disc pl-5">
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-              <li>Key responsibility or achievement</li>
-            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <section id="skillsandprojects"
-      class="px-6 my-48 sm:px-8 lg:flex lg:w-full lg:justify-between lg:gap-12 text-neutral-100">
+      class="px-6 mt-48 sm:px-8 lg:flex lg:w-full lg:justify-between lg:gap-12 text-neutral-100 text-xl">
 
       <!-- left side: skills -->
       <div class="lg:mb-10 lg:w-full text-neutral-100">
-        <div id="skills" class="my-32 sticky top-48"">
-          <h3 class="text-3xl font-mono xl:text-7xl font-extrabold mb-8 p-4 border-l-8 border-green-300">Skills</h3>
-          <ul class="grid grid-cols-1 gap-2">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>TailwindCSS</li>
-          </ul>
+        <div id="skills" class="my-32 sticky top-48">
+          <h3
+            class="text-3xl font-mono font-extrabold mb-8 p-4 border-l-8 border-green-300 bg-green-300 text-green-800">
+            Skills</h3>
+          <div class="p-4 border-l-4 border-green-300">
+            <h2 class="text-xl">Proficient</h2>
+            <div class="p-4 mb-4">
+              <ul class="list-disc pl-5">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Liquid</li>
+                <li>JavaScript</li>
+                <li>PineScript</li>
+                <li>jQuery</li>
+                <li>Python</li>
+                <li>Git</li>
+              </ul>
+            </div>
+            <h2 class="text-xl">Competent</h2>
+            <div class="p-4 mb-4">
+              <ul class="list-disc pl-5">
+                <li>TypeScript</li>
+                <li>Ruby</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- right side: projects -->
       <div class="lg:mb-10 lg:w-full text-neutral-100">
         <div id="projects" class="my-32">
-          <h3 class="text-3xl font-mono font-extrabold mb-8 p-4 border-l-8 border-indigo-400 bg-indigo-400">Projects</h3>
+          <h3 class="text-3xl font-mono font-extrabold mb-8 p-4 border-l-8 border-indigo-400 bg-indigo-400">Projects
+          </h3>
           <div class="mb-4 border-l-4 p-4 border-indigo-400">
             <h4 class="text-lg font-semibold">Diffy</h4>
-            <p><a class="text-indigo-200" href="https://www.github.com/shopify/diffy">https://github.com/shopify/diffy</a></p>
+            <p><a class="text-indigo-200 hover:text-indigo-400 transition ease-out hover:ease-in"
+                href="https://www.github.com/shopify/diffy">https://github.com/shopify/diffy</a></p>
             <p class="py-4 text-xs text-indigo-400">Jan 2022 - Current</p>
             <p>A diff checker for the Shopify code editor that works for all themes.</p>
           </div>
           <div class="mb-4 border-l-4 p-4 border-indigo-400">
             <h4 class="text-lg font-semibold">SlackTrack</h4>
-            <p><a class="text-indigo-200" href="https://github.com/Shopify/theme-support/projects/11">https://github.com/Shopify/theme-support/projects/11</a></p>
+            <p><a class="text-indigo-200 hover:text-indigo-400 transition ease-out hover:ease-in"
+                href="https://github.com/Shopify/theme-support/projects/11">https://github.com/Shopify/theme-support/projects/11</a>
+            </p>
             <p class="py-4 text-xs text-indigo-400">Jan 2022 - Oct 2011</p>
           </div>
         </div>
@@ -240,27 +284,120 @@
           <h3 class="text-3xl font-mono font-extrabold mb-8 p-4 border-l-8 border-orange-300 bg-orange-300">Tools</h3>
           <div class="mb-4 border-l-4 border-orange-300 p-4">
             <h4 class="text-lg font-semibold">Powerpole</h4>
-            <p><a class="text-orange-200" href="#">https://github.com/joeyschuster/powerpole/</a></p>
+            <p><a class="text-orange-200 hover:text-orange-400 transition ease-out hover:ease-in"
+                href="#">https://github.com/joeyschuster/powerpole/</a></p>
             <p class="py-4 text-xs text-orange-300">Jan 2021 - Current</p>
-            <p>Powerpole is a chrome extension tool designed to improve workflow speed for Shopify theme development. It offers features such as schema generation and quick copying of current pages to markdown links, which can help save time and effort. As a tool built by you, highlighting your experience with Powerpole in your CV can demonstrate your technical skills and expertise in the Shopify ecosystem.</p>
+            <p>Powerpole is a chrome extension tool designed to improve workflow speed for Shopify theme development. It
+              offers features such as schema generation and quick copying of current pages to markdown links, which can
+              help save time and effort. As a tool built by you, highlighting your experience with Powerpole in your CV
+              can demonstrate your technical skills and expertise in the Shopify ecosystem.</p>
           </div>
           <div class="mb-4 border-l-4 border-orange-300 p-4">
             <h4 class="text-lg font-semibold">Auto MS</h4>
-            <p><a class="text-orange-200" href="#">https://github.com/joeyschuster/automs/</a></p>
+            <p><a class="text-orange-200 hover:text-orange-400 transition ease-out hover:ease-in"
+                href="#">https://github.com/joeyschuster/automs/</a></p>
             <p class="py-4 text-xs text-orange-300">Dec 2022 - Current</p>
-            <p>Auto MS is a work-in-progress library of scripts used to analyze merchant stores for suitable merchant success suggestions.</p>
+            <p>Auto MS is a work-in-progress library of scripts used to analyze merchant stores for suitable merchant
+              success suggestions.</p>
             <p></p>
           </div>
           <div class="mb-4 border-l-4 border-orange-300 p-4">
             <h4 class="text-lg font-semibold">ChatGPT Voice</h4>
-            <p><a class="text-orange-200" href="#">https://github.com/joeyschuster/chatgptvoice/</a></p>
+            <p><a class="text-orange-200 hover:text-orange-400 transition ease-out hover:ease-in"
+                href="#">https://github.com/joeyschuster/chatgptvoice/</a></p>
             <p class="py-4 text-xs text-orange-300">Dec 2022</p>
-            <p>A Chrome extension that allows for voice input to be used as the prompt as well as converting ChatGPT responses into text-to-speech (TTS)</p>
+            <p>A Chrome extension that allows for voice input to be used as the prompt as well as converting ChatGPT
+              responses into text-to-speech (TTS)</p>
           </div>
         </div>
       </div>
     </section>
+
+    <div id="references"
+      class="text-neutral-100 lg:h-screen w-full flex items-center justify-center text-center flex-col">
+      <h3 class="text-3xl font-semibold mb-2">- References available upon request - </h3>
+    </div>
   </div>
+
+  <div id="contact"
+    class="bg-neutral-800/25 p-16 text-neutral-100 w-full flex items-center justify-center text-center flex-col">
+    <p class="text-3xl font-semibold mb-8">Connect ↓</p>
+
+    <div class="flex flex-row">
+      <div class="mx-2">
+        <a href="mailto:joey.schuster@shopify.com" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path class="fill-white" d="M13.718 10.528c0 .792-.268 1.829-.684 2.642-1.009 1.98-3.063 1.967-3.063-.14 0-.786.27-1.799.687-2.58 1.021-1.925 3.06-1.624 3.06.078zm10.282 1.472c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-1.194c0-3.246-2.631-5.601-6.256-5.601-4.967 0-7.744 3.149-7.744 7.073 0 3.672 2.467 6.517 7.024 6.517 2.52 0 4.124-.726 5.122-1.288l-.687-.991c-1.022.593-2.251 1.136-4.256 1.136-3.429 0-5.733-2.199-5.733-5.473 0-5.714 6.401-6.758 9.214-5.071 2.624 1.642 2.524 5.578.582 7.083-1.034.826-2.199.799-1.821-.756 0 0 1.212-4.489 1.354-4.975h-1.364l-.271.952c-.278-.785-.943-1.295-1.911-1.295-2.018 0-3.722 2.19-3.722 4.783 0 1.73.913 2.804 2.38 2.804 1.283 0 1.95-.726 2.364-1.373-.3 2.898 5.725 1.557 5.725-3.525z"/></svg>
+        </a>
+      </div>
+
+      <div class="mx-2">
+        <a href="https://github.com/joeyschuster" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path class="fill-white"
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+  
+      <div class="mx-2">
+        <a href="https://www.linkedin.com/in/jschusterhill" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path class="fill-white"
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <button id="goToTopBtn" title="Go to top" style="display: block;"
+    class="bg-red-600 bottom-3 fixed font-extrabold hidden hover:bg-yellow-400 hover:text-black p-2 right-3 text-3xl text-white">^</button>
+
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", (evt) => {
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTopBtn").style.display = "block";
+      } else {
+        document.getElementById("goToTopBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      const scrollingElement = getScrollingElement(document.body);
+      setTimeout(() => {
+        scrollingElement.scroll({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+
+    function getScrollingElement(element) {
+      if (element.scrollHeight > element.clientHeight) {
+        return element;
+      } else if (element.parentElement) {
+        return getScrollingElement(element.parentElement);
+      } else {
+        return document.documentElement;
+      }
+    }
+
+
+
+    document.getElementById("goToTopBtn").addEventListener('click', topFunction);
+
+
+  });
+</script>
 
 </html>
